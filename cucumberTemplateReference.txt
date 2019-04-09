@@ -1,0 +1,53 @@
+This class can be used as a reference for other feature files.
+
+
+	************************************************ACCOUNT SETTINGS FEATURES*******************************************************
+    Given user signs in to the account using the email "bayram1923@gmail.com" and password "Bayram2018"         ---> comes from changePassword.feature
+    Then user clicks on My Account                                                                              ---> comes from changePassword.feature
+    
+    ************************************************SHIPPING ADDRESSES FEATURES*****************************************************
+    Then user clicks on Manage Addresses                                                                        ---> comes from addShippingAddressFromExcel.feature
+	And user clicks on Add New Address button                                                                   ---> comes from addShippingAddressFromExcel.feature
+	Then user pulls all the data from Excel file at row number 2 and saves it                                   ---> comes from addShippingAddressFromExcel.feature
+	Then user pulls all the data from Excel file from row number 4 to 5 and saves them                          ---> comes from addShippingAddressFromExcel.feature
+    
+    ************************************************CONTACT LENSES FEATURES*********************************************************
+    Then user chooses "Candies" from options under BRAND                                                        ---> comes from shopAllUnderContactLenses.feature
+    Then user chooses "Progressive" from options under LENS OPTIONS                                             ---> comes from shopAllUnderContactLenses.feature
+    Then user chooses "Eclectic" from options under MY STYLE                                                    ---> comes from shopAllUnderContactLenses.feature
+    Then user chooses "$0 - $100" from options under PRICE                                                      ---> comes from shopAllUnderContactLenses.feature
+    Then user chooses "Round" from options under FRAME SHAPE                                                    ---> comes from shopAllUnderContactLenses.feature
+    Then user chooses "Oval" from options under FACE SHAPE                                                      ---> comes from shopAllUnderContactLenses.feature
+    Then user checks the price and name of first 3 glasses- from left to right                                  ---> comes from shopAllUnderContactLenses.feature
+    Then user clicks on "Sphere" to clear everything for "Sphere"                                               ---> comes from shopAllUnderContactLenses.feature
+    Then user clicks on the "Lowest Price" under Relevance drop down menu                                       ---> comes from shopAllUnderContactLenses.feature
+    
+    ************************************************GLASSES FEATURES****************************************************************
+    Then user chooses "Try-On View" option                                                                       ---> comes from roundFace.feature 
+    Then user sees the percent of the discount and amount of saving for first 3 glasses- from left to right  ---> comes from roundFace.feature
+    Then user chooses "Gold" as his or her desired color                                                         ---> comes from squareFace.feature
+    Then user chooses "Large" as his or her desired Frame Size                                                   ---> comes from squareFace.feature
+    Then user chooses "Metal" as his or her desired Material Type                                                ---> comes from squareFace.feature
+    Then user clicks on red X's to clear filters                                                                 ---> comes from heartFace.feature
+    And user click on "Heart" under Shop By Face Shape                                                           ---> comes from heartFace.feature
+    Then user clicks on "Glasses"                                                                                ---> comes from heartFace.feature
+    Then user clicks on My Account to see user greeting                                                          ---> comes from heartFace.feature
+    Then user clicks on the "Newest" under Relevance drop down menu                                              ---> comes from ovalFrame.feature
+    
+    ************************************************BRANDS FEATURES******************************************************************
+    Then user chooses a brand called "Diesel" for frames or contact lenses                                       ---> comes from viewingBrand.feature
+    
+    
+    ************************************************FIND A STORE FEATURES************************************************************
+    Given user goes to Visonworks website                                                                        ---> comes from findAstoreByCity.feature
+    Then user clicks on the "Find A Store" top tab                                                               ---> comes from findAstoreByCity.feature
+    Then user clicks on enterCityStateOrZipCode button                                                           ---> comes from findAstoreByCity.feature
+	Then user enters a city name "Austin"                                                                        ---> comes from findAstoreByCity.feature
+	And user clicks the Find button                                                                              ---> comes from findAstoreByCity.feature
+	Then user enters a state name "Texas"                                                                        ---> comes from findAstoreByState.feature
+	Then user enters a zip code "78205"                                                                          ---> comes from findAstoreByZipCode.feature
+	Then user enters "Austin" into the text box by Enter a location                                              ---> comes from seeNearbyStores.feature
+	
+	************************************************OFFERS FEATURES******************************************************************
+	Then user sees how many stores are there in that area                                                        ---> comes from offersWithoutSignIn.feature
+    

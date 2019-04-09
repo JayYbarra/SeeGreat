@@ -1,0 +1,8 @@
+IN THIS FILE WE HAVE SOME SYNTAX EXAMPLES THAT WE USED IN OUR FRAMEWORK AND CAN BE USED AS A GUIDE TO LOCATE WEB ELEMENTS
+
+       //a[contains(text(),'LENS OPTIONS')]
+       //*[contains(text(),'LENS OPTIONS')]
+       //a[@class='categories'][contains(@href, 'glasses/mens')]
+     
+       //input[@name='prescriptionType'][contains(@value, '')]
+         driver.findElement(By.xpath("//input[@name='prescriptionType'][contains(@value, '"+ fileData.get(0).get("PrescriptionType") +"')]")).click();
